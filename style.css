@@ -11,7 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient( #007acc, #6DD5FA, #FFFFFF);
+    background-image: url(3.png);
 }
 #paragraph{
     color: #646669;
@@ -26,7 +26,7 @@ body {
 .wrapper {
     width: 800px;
     padding: 35px;
-    background: #1e1e1e;
+  
     border-radius: 10px;
     box-shadow: 0 10px 15px rgba(0,0,0,0.05);
 }
