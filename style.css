@@ -21,11 +21,11 @@ body {
 }
 ::selection {
     color: #fff;
-    background: #007acc;
+    background: rgb(80, 196, 3);
 }
 .wrapper {
-    width: 800px;
-    padding: 35px;
+    width: 700px;
+    padding: 5px;
   
     border-radius: 10px;
     box-shadow: 0 10px 15px rgba(0,0,0,0.05);
@@ -36,13 +36,13 @@ body {
     position: absolute;
 }
 .wrapper .content-box {
-    padding: 13px 20px 0;
-    border-radius: 10px;
-    border: 4px solid #007acc;
+    padding: 0px 20px 0;
+    border-radius: 20px;
+    border: 4px solid rgb(80, 196, 3);
 }
 .content-box .typing-text {
-    overflow: hidden;
-    max-height: 256px;
+    overflow: scroll;
+    max-height: 200px;
 }
 .typing-text::-webkit-scrollbar {
     width: 0;
@@ -75,7 +75,7 @@ body {
     left: 0;
     opacity: 0;
     border-radius: 5px;
-    background: #007acc;
+    background: rgb(80, 196, 3);
     animation: blink 1s ease-in-out infinite;
 }
 @keyframes blink {
@@ -83,26 +83,35 @@ body {
         opacity: 1;
     }
 }
-.content-box .content {
-    margin-top: 17px;
+.content-box .content1 {
+    margin-top: 5px;
     display: flex;
-    padding: 12px 0;
+    padding: 7px 0;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    border-top: 3px solid #007acc;
+    border-bottom: 3px solid rgb(80, 196, 3);
+}
+.content-box .content {
+    margin-top: 17px;
+    display: flex;
+    padding: 7px 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 3px solid rgb(80, 196, 3);
 }
 .content button {
     outline: none;
     border: none;
     width: 105px;
-    color: #007acc;
+    color: rgb(80, 196, 3);
     padding: 8px 0;
     font-size: 17px;
     font-weight: 600;
     cursor: pointer;
     border-radius: 15px;
-    border: 3px solid #007acc;
+    border: 3px solid rgb(80, 196, 3);
     background: none;
     transition: transform 0.2s ease;
 }
@@ -112,7 +121,7 @@ body {
 .content button:hover {
     background: #FFFFFF;
 }
-.content .result-details {
+.content1 .result-details {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
