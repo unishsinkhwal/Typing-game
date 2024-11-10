@@ -111,7 +111,7 @@ body {
     font-weight: 600;
     cursor: pointer;
     border-radius: 15px;
-    border: 3px solid rgb(80, 196, 3);
+    border: 3px solid rgb(80, 196 , 3);
     background: none;
     transition: transform 0.2s ease;
 }
@@ -119,6 +119,34 @@ body {
     transform: scale(0.89);
 }
 .content button:hover {
+    background: #FFFFFF;
+}
+.content-box .content2 {
+    margin-top: 17px;
+    display: flex;
+    padding: 0px 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.content2 button {
+    outline: none;
+    border: none;
+    width: 105px;
+    color: rgb(80, 196, 3);
+    padding: 8px 0;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 3px solid rgb(80, 196 , 3);
+    background: none;
+    transition: transform 0.2s ease;
+}
+.content2 button:active {
+    transform: scale(0.89);
+}
+.content2 button:hover {
     background: #FFFFFF;
 }
 .content1 .result-details {
