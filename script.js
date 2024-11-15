@@ -118,3 +118,24 @@ loadParagraph();
 inpField.addEventListener("input", initTyping);
 tryAgainBtn.addEventListener("click", resetGame);
 resetbtn.addEventListener("click", reset);
+
+function displayHighScore() {
+    let highScore = localStorage.getItem("highScore") || 0;
+    document.getElementById("high-score").textContent = `High Score: ${highScore}`;
+}
+
+// Function to update the high score if the new score is higher
+function updateHighScore() {
+    let highScore = parseInt(localStorage.getItem("highScore")) || 0;
+    let newScore = parseInt(document.getElementById("new-score").value);
+
+    if (newScore > highScore) {
+        localStorage.setItem("highScore", newScore);
+        document.getElementById("high-score").textContent = `High Score: ${newScore}`;
+        alert("New high score achieved!");
+    } else {
+        alert("Try again to beat the high score!");
+    }
+}
+
+displayHighScore();

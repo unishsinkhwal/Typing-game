@@ -15,35 +15,38 @@
             <div class="content1">
                 <ul class="result-details">
                     <li class="username">
-                        <p>
-                            Username:
+                        <p id="output">
+                            <script>
+                                function displayFormData(){
+                                    const urlParams = new URLSearchParams(window.location.search);
+                                    const output = document.getElementById('output');
+                                    const username = urlParams.get('Username') || 'Guest';
+                                    output.innerHTML = `Username: ${username}`;
+                                    output.style.color = 'white';
+                                }
+
+                                window.onload = displayFormData;
+                            </script>
                         </p>
                     </li>
                     <li class="high-score">
-                        <p>
-                            Highscore:
-                        </p>
-                    </li>
+                        <p>Highscore:</p>
+                        <span id="high-score">0</span> WPM
+                    </li>                    
                 </ul>
             </div>
             <div class="content1">
                 <ul class="result-details">
-                    <li class="time">
-                        <p>
-                            Time Left:
-                        </p>
-                        <span><b>60</b>s</span>
-                    </li>
-                    </li>
-                    <li class="cpm">
-                        <p>
-                            CPM:
-                        </p>
-                        <span>0</span>
                     </li>
                     <li class="wpm">
                         <p>
                             WPM:
+                        </p>
+                        <span id="wpm">0</span>
+                    </li>
+                    <li class="cpm">
+                        <p>
+                            CPM:
                         </p>
                         <span>0</span>
                     </li>
@@ -52,6 +55,13 @@
                             Mistakes:
                         </p>
                         <span>0</span>
+                    </li>
+                    <li class="time">
+                        <p>
+                            Time Left:
+                        </p>
+                        <span><b>60</b>s</span>
+                    </li>
                 </ul><br>
             </div>
             <div class="typing-text">
