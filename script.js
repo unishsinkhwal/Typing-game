@@ -126,5 +126,6 @@ function loadhighscore() {
     if(wpm>highscore)
     {
         highscore = wpm;
+        
     }
 }
